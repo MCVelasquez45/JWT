@@ -105,13 +105,7 @@ app.use('/api/private', privateRoutes);
 
 const PORT = process.env.PORT || 4545;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
-```
-// Mount JWT-related routes under the /api namespace.
-app.use('/api/auth', authRoutes);
-app.use('/api/private', privateRoutes);
 
-const PORT = process.env.PORT || 4545;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
 ```
 
 ### 2.3 Mongo connection helper
